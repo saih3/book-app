@@ -12,7 +12,7 @@ namespace book_exchange
         public App()
         {
             InitializeComponent();
-
+            Device.SetFlags(new[] { "Expander_Experimental" });
             DependencyService.Register<MockDataStore>();
             MainPage = new AppShell();
         }

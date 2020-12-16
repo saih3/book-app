@@ -29,10 +29,25 @@
         </ResourceDictionary>
     </Shell.Resources>
 
+  
     <TabBar>
-        <ShellContent Title="Home" Icon="icon_about.png" Route="HomePage" ContentTemplate="{DataTemplate local:HomePage}" />
-        <ShellContent Title="Saved" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
-        <ShellContent Title="Add" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:NewItemPage}" />
+
+        <!--<ShellContent Title="Home" Route="HomePage" ContentTemplate="{DataTemplate local:HomePage}">
+            <ShellContent.Icon>
+                <FontImageSource 
+                    FontFamily="{StaticResource FontAwesomeSolid}"
+                    Glyph=""
+                    Color="Black"
+                    Size="24"
+                    >
+                </FontImageSource>
+            </ShellContent.Icon>
+        </ShellContent>-->
+
+        <ShellContent Title="Home" Icon="icon_about.png" Route="HomePage" ContentTemplate="{DataTemplate local:HomePage}"/>
+        <ShellContent Title="Chat" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
+        <ShellContent Title="Saved" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:NewItemPage}" />
+        <ShellContent Title="Profile" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:NewItemPage}" />
     </TabBar>
 
     <!--

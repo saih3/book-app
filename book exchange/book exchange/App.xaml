@@ -6,6 +6,15 @@
         Define global resources and styles here, that apply to all pages in your app.
     -->
     <Application.Resources>
+        
+        <!--<OnPlatform x:TypeArguments="x:String" 
+                x:Key="FontAwesomeSolid">
+            <On Platform="Android" 
+                 Value="FontAwesome5Solid.otf#Regular" />
+            <On Platform="iOS" 
+                 Value="FontAwesome5Free-Solid" />
+        </OnPlatform>-->
+        
         <ResourceDictionary>
             <Color x:Key="Primary">#064acb</Color>
             <Color x:Key="Secondary">#f3a953</Color>
