@@ -45,23 +45,23 @@ namespace book_exchange.ViewModels
         {
             return new ObservableCollection<Event>
             {
-                new Event { Title = "Xamarin Forms Masterclass", Image = "book1pic.jpg", Venue = "Register Online", Duration = "07:30 UTC - 09:30 UTC", Date = new DateTime(2020, 6, 8), Description = "This masterclass was design to help you take your Xamarin Forms Development to the next level. Register here: https://bit.ly/2XbkoTG"},
-                new Event { Title = "Training: WDC Solution", Image = "book1pic.jpg", Venue = "Zoom Meeting", Duration = "07:30 UTC - 09:30 UTC", Date = new DateTime(2020, 6, 9), Description = "Want to maximize your European vacation? Move through Europe with ease & discover how to travel around Europe by train with as little as possible."},
-                new Event { Title = "World Dogs Championship", Image = "book1pic.jpg", Venue = "Virtual Challenge", Duration = "07:30 UTC - 09:30 UTC", Date = new DateTime(2020, 6, 10), Description = "A dog earns a championship with wins at a specified number of conformation shows, where a judge evaluates a dog's breed type and how closely the dog approaches the ideal represented in its breed's standard."},
-                new Event { Title = "Book Review Conference", Image = "book1pic.jpg", Venue = "Online", Duration = "07:30 UTC - 09:30 UTC", Date = new DateTime(2020, 6, 11), Description = "And whether you are a publishing insider or simply a book nerd, you should be able to find something to suit you in this list of events in 2020."},
-                new Event { Title = "Tea Ceremony", Image = "book1pic.jpg", Venue = "Virtual Meetup", Duration = "07:30 UTC - 09:30 UTC", Date = new DateTime(2020, 6, 12), Description = "The tea ceremony sees the simple task of preparing a drink for a guest elevated to an art form, an intricate series of movements performed in strict order."}
+                new Event { Title = "Introduction to Algorithms", Image = "book1pic.jpg", Author = "Thomas H. Cormen, Charles E. Leiserson, Ronald Rivest, Clifford Stein", Location = "On Campus", Date = new DateTime(2020, 6, 8), Description = "DM me if you want this book! I am available to give it to you from Monday to Friday right after common lunch. Preferably meet at Reamer."},
+                new Event { Title = "Introduction to Algorithms", Image = "book1pic.jpg", Author = "Thomas H. Cormen, Charles E. Leiserson, Ronald Rivest, Clifford Stein", Location = "On Campus", Date = new DateTime(2020, 6, 8), Description = "DM me if you want this book! I am available to give it to you from Monday to Friday right after common lunch. Preferably meet at Reamer."},
+                new Event { Title = "Introduction to Algorithms", Image = "book1pic.jpg", Author = "Thomas H. Cormen, Charles E. Leiserson, Ronald Rivest, Clifford Stein", Location = "On Campus", Date = new DateTime(2020, 6, 8), Description = "DM me if you want this book! I am available to give it to you from Monday to Friday right after common lunch. Preferably meet at Reamer."},
+                new Event { Title = "Introduction to Algorithms", Image = "book1pic.jpg", Author = "Thomas H. Cormen, Charles E. Leiserson, Ronald Rivest, Clifford Stein", Location = "On Campus", Date = new DateTime(2020, 6, 8), Description = "DM me if you want this book! I am available to give it to you from Monday to Friday right after common lunch. Preferably meet at Reamer."},
+                new Event { Title = "Introduction to Algorithms", Image = "book1pic.jpg", Author = "Thomas H. Cormen, Charles E. Leiserson, Ronald Rivest, Clifford Stein", Location = "On Campus", Date = new DateTime(2020, 6, 8), Description = "DM me if you want this book! I am available to give it to you from Monday to Friday right after common lunch. Preferably meet at Reamer."},
             };
         }
     }
 
 
-    public class Event
+  /*  public class Event
     {
         public string Title { get; set; }
-        public string Venue { get; set; }
+        public string Author { get; set; }
         public string Duration { get; set; }
         public string Description { get; set; }
         public string Image { get; set; }
         public DateTime Date { get; set; }
-    }
+    }*/
 }
