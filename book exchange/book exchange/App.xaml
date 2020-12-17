@@ -7,15 +7,16 @@
     -->
     <Application.Resources>
         
-        <!--<OnPlatform x:TypeArguments="x:String" 
-                x:Key="FontAwesomeSolid">
-            <On Platform="Android" 
-                 Value="FontAwesome5Solid.otf#Regular" />
-            <On Platform="iOS" 
-                 Value="FontAwesome5Free-Solid" />
-        </OnPlatform>-->
-        
         <ResourceDictionary>
+            
+            <OnPlatform x:TypeArguments="x:String" 
+                x:Key="FontAwesomeSolid">
+                <On Platform="Android" 
+                 Value="FontAwesome5Solid.otf#Regular"/>
+                <On Platform="iOS" 
+                 Value="FontAwesome5Free-Solid"/>
+            </OnPlatform>
+            
             <Color x:Key="Primary">#064acb</Color>
             <Color x:Key="Secondary">#f3a953</Color>
             <Style TargetType="Button">

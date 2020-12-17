@@ -44,10 +44,51 @@
             </ShellContent.Icon>
         </ShellContent>-->
 
-        <ShellContent Title="Home" Icon="icon_about.png" Route="HomePage" ContentTemplate="{DataTemplate local:HomePage}"/>
-        <ShellContent Title="Chat" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
-        <ShellContent Title="Saved" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:NewItemPage}" />
-        <ShellContent Title="Profile" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:NewItemPage}" />
+        <ShellContent Title="Home" Route="HomePage" ContentTemplate="{DataTemplate local:HomePage}">
+            <ShellContent.Icon>
+                <FontImageSource
+                    FontFamily="{StaticResource FontAwesomeSolid}"
+                    Glyph=""
+                    Color="white"
+                    Size="24">
+                </FontImageSource>
+            </ShellContent.Icon>
+        </ShellContent>
+
+        <ShellContent Title="Chat" ContentTemplate="{DataTemplate local:ItemsPage}">
+            <ShellContent.Icon>
+                <FontImageSource
+                    FontFamily="{StaticResource FontAwesomeSolid}"
+                    Glyph=""
+                    Color="white"
+                    Size="24">
+                </FontImageSource>
+            </ShellContent.Icon>
+        </ShellContent>
+
+        <ShellContent Title="Saved" ContentTemplate="{DataTemplate local:NewItemPage}">
+            <ShellContent.Icon>
+                <FontImageSource
+                    FontFamily="{StaticResource FontAwesomeSolid}"
+                    Glyph=""
+                    Color="white"
+                    Size="24">
+                </FontImageSource>
+            </ShellContent.Icon>
+        </ShellContent>
+
+
+        <ShellContent Title="Profile" ContentTemplate="{DataTemplate local:NewItemPage}">
+            <ShellContent.Icon>
+                <FontImageSource
+                    FontFamily="{StaticResource FontAwesomeSolid}"
+                    Glyph=""
+                    Color="white"
+                    Size="24">
+                </FontImageSource>
+            </ShellContent.Icon>
+        </ShellContent>
+
     </TabBar>
 
     <!--
