@@ -154,6 +154,7 @@
             WidthRequest="60"
             HorizontalOptions="End"
             VerticalOptions="End"
+            Clicked="OnAddItem_Clicked"
             />
         
     </AbsoluteLayout>

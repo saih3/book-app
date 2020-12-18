@@ -13,6 +13,7 @@ namespace book_exchange.Views
 
     public partial class HomePage : ContentPage
     {
+
         public HomePage()
         {
             InitializeComponent();
@@ -50,6 +51,11 @@ namespace book_exchange.Views
                 await CloseAnimation(detailsView);
                 await CloseAnimation(imgView);
             }
+        }
+
+        private async void OnAddItem_Clicked(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync(nameof(NewItemPage));
         }
     }
 }
