@@ -7,6 +7,7 @@
              Shell.NavBarIsVisible="false"
              >
 
+    <!--x:Name="book_exchange.ViewModels.ItemsViewModel"-->
 
     <ContentPage.BindingContext>
         <vm:HomePageModel />
@@ -17,6 +18,7 @@
             <Color x:Key="Accent">green</Color>
         </ResourceDictionary>
     </ContentPage.Resources>-->
+    
     <AbsoluteLayout>
         <Grid>
             <Grid.RowDefinitions>
@@ -75,7 +77,7 @@
             </ScrollView>-->
 
             <CollectionView Grid.Row="1" Margin="30" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
-                            SelectionMode="None" IsEnabled="True" IsVisible="True" EmptyView="No items to display" ItemsSource="{Binding MyEvents }">
+                            SelectionMode="None" IsEnabled="True" IsVisible="True" EmptyView="No items to display" ItemsSource="{Binding MyEvents }" BackgroundColor="white">
                 <!--<CollectionView.Header>
                     <Label Text="My Events" TextColor="Black" FontSize="20" FontAttributes="Bold"/>
                 </CollectionView.Header>-->
@@ -140,19 +142,20 @@
         </Grid>
 
         <Button 
-                Text="&#xf067;"
-                TextColor="White"
-                FontFamily="{StaticResource FontAwesomeSolid}" 
-                FontSize="30"
-                AbsoluteLayout.LayoutBounds="0.95,0.95,80,80"
-                AbsoluteLayout.LayoutFlags="PositionProportional"
-                BackgroundColor="OrangeRed"
-                CornerRadius="30"
-                HeightRequest="60"
-                WidthRequest="60"
-                HorizontalOptions="End"
-                VerticalOptions="End"
-                />
+            Text="&#xf067;"
+            TextColor="White"
+            FontFamily="{StaticResource FontAwesomeSolid}" 
+            FontSize="30"
+            AbsoluteLayout.LayoutBounds="0.95,0.95,80,80"
+            AbsoluteLayout.LayoutFlags="PositionProportional"
+            BackgroundColor="OrangeRed"
+            CornerRadius="30"
+            HeightRequest="60"
+            WidthRequest="60"
+            HorizontalOptions="End"
+            VerticalOptions="End"
+            />
+        
     </AbsoluteLayout>
 
 </ContentPage>

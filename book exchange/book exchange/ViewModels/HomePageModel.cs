@@ -37,6 +37,7 @@ namespace book_exchange.ViewModels
         public HomePageModel()
         {
             MyEvents = GetEvents();
+
         }
 
         public ObservableCollection<Event> MyEvents { get; set; }
@@ -52,6 +53,8 @@ namespace book_exchange.ViewModels
                 new Event { Title = "Introduction to Algorithms", Image = "book1pic.jpg", Author = "Thomas H. Cormen, Charles E. Leiserson, Ronald Rivest, Clifford Stein", Location = "On Campus", Date = new DateTime(2020, 6, 8), Description = "DM me if you want this book! I am available to give it to you from Monday to Friday right after common lunch. Preferably meet at Reamer."},
             };
         }
+
+     
     }
 
 
