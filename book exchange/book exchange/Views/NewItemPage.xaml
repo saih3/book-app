@@ -22,12 +22,10 @@
             
                 <Label Text="Enter ISBN or Scan Code" FontSize="Medium" />
                 <Grid>
-                    <Entry Text="{Binding Text, Mode=TwoWay}" FontSize="Medium"   />
+                    <Entry Text="{Binding Isbn, Mode=TwoWay}" FontSize="Medium"   />
                     <Button Text="&#xf029;"
                         FontFamily="{StaticResource FontAwesomeSolid}" BackgroundColor="white" FontSize="30"
                         TextColor="black" HorizontalOptions="End"/>
-
-
                 </Grid>
             
             
@@ -35,58 +33,24 @@
                 <Entry Text="{Binding Text, Mode=TwoWay}" FontSize="Medium" />
 
                 <Label Text="Author(s)" FontSize="Medium" />
-                <Entry Text="{Binding Text, Mode=TwoWay}" FontSize="Medium" />
+                <Entry Text="{Binding Author, Mode=TwoWay}" FontSize="Medium" />
 
                 <Label Text="Details" FontSize="Medium" />
                 <Editor Text="{Binding Description, Mode=TwoWay}" AutoSize="TextChanges" FontSize="Medium" Margin="0" />
 
-                <Grid Margin="10">
-                     <Switch OnColor="Orange"
-                     ThumbColor="Green" />
-                    <Label Text="On Campus" HorizontalOptions="CenterAndExpand"/>
-                </Grid>
+                <StackLayout Orientation="Horizontal" Padding="10">
+                    <Label Text="On Campus" FontSize="Medium" HorizontalOptions="Start"/>
+                    <Switch OnColor="Orange"
+                        ThumbColor="Green" HorizontalOptions="End" />
+                </StackLayout>
 
-                <!--SEGMENTED BUTTON CONTROL--> 
-                <!--<Grid ColumnSpacing="0">
-                    --><!--  Tab button 1  --><!--
-                    <Grid Grid.Column="0" IsClippedToBounds="True">
-                        <Button
-                            Text="On Campus"
-                            Margin="-2,-3,-2,0"
-                            />
-                        <Label
-                            FontAttributes="Bold"
-                            FontSize="Medium"
-                            HorizontalOptions="CenterAndExpand"
-                            InputTransparent="True"
-                            VerticalOptions="CenterAndExpand" />
-                        <BoxView
-                            HeightRequest="2"
-                            InputTransparent="True"
-                            IsVisible="False"
-                            VerticalOptions="End" />
-                    </Grid>
-                    --><!--  Tab button 1  -->
-                    <!--  Tab button 2  --><!--
-                    <Grid Grid.Column="1" IsClippedToBounds="True">
-                        <Button
-                            Text="Off Campus"
-                            Margin="-2,-3,-2,0"
-                            />
-                        <Label
-                            FontAttributes="Bold"
-                            FontSize="Medium"
-                            HorizontalOptions="CenterAndExpand"
-                            InputTransparent="True"
-                            VerticalOptions="CenterAndExpand" />
-                        <BoxView
-                            HeightRequest="2"
-                            InputTransparent="True"
-                            IsVisible="False"
-                            VerticalOptions="End" />
-                    </Grid>
-                    --><!--  Tab button 2  --><!--
-                </Grid>-->
+
+                <Button BackgroundColor="LightBlue" CornerRadius="10"
+                    Padding="0" HorizontalOptions="FillAndExpand"
+                    Text="UPLOAD IMAGE   &#xf093;" FontAttributes="Bold"
+                    FontFamily="{StaticResource FontAwesomeSolid}" FontSize="Medium">
+                </Button>
+
 
 
                 <StackLayout Orientation="Horizontal">

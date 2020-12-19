@@ -11,6 +11,10 @@ namespace book_exchange.ViewModels
     {
         private string text;
         private string description;
+        private string isbn;
+        private string author;
+
+
 
         public NewItemViewModel()
         {
@@ -36,6 +40,18 @@ namespace book_exchange.ViewModels
         {
             get => description;
             set => SetProperty(ref description, value);
+        }
+
+        public string Isbn
+        {
+            get => isbn;
+            set => SetProperty(ref isbn, value);
+        }
+
+        public string Author
+        {
+            get => author;
+            set => SetProperty(ref author, value);
         }
 
         public Command SaveCommand { get; }
