@@ -49,6 +49,16 @@ namespace book_exchange.ViewModels
             public DateTime Date { get; set; }
         }
 
+        //public class Contact
+        //{
+        //    public long ContactID { get; set; }
+        //    public string PhoneNumber { get; set; }
+        //    public string Name { get; set; }
+        //    public string ProfileImage { get; set; }
+        //    public bool ChatPinned { get; set; }
+        //    public virtual LastChatMetaData ChatMetaData { get; set; }
+        //}
+
         #region INotifyPropertyChanged
         public event PropertyChangedEventHandler PropertyChanged;
         protected void OnPropertyChanged([CallerMemberName] string propertyName = "")

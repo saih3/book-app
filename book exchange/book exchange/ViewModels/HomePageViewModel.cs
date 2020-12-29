@@ -32,9 +32,9 @@ namespace book_exchange.ViewModels
     // Learn more about making custom code visible in the Xamarin.Forms previewer
     // by visiting https://aka.ms/xamarinforms-previewer
     [DesignTimeVisible(false)]
-    public class HomePageModel : BaseViewModel
+    public class HomePageViewModel : BaseViewModel
     {
-        public HomePageModel()
+        public HomePageViewModel()
         {
             MyEvents = GetEvents();
 
@@ -58,13 +58,4 @@ namespace book_exchange.ViewModels
     }
 
 
-  /*  public class Event
-    {
-        public string Title { get; set; }
-        public string Author { get; set; }
-        public string Duration { get; set; }
-        public string Description { get; set; }
-        public string Image { get; set; }
-        public DateTime Date { get; set; }
-    }*/
 }

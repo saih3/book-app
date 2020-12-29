@@ -55,7 +55,7 @@
             </ShellContent.Icon>
         </ShellContent>
 
-        <ShellContent Title="Chat" ContentTemplate="{DataTemplate local:ItemsPage}">
+        <ShellContent Title="Chat" ContentTemplate="{DataTemplate local:ChatsPage}">
             <ShellContent.Icon>
                 <FontImageSource
                     FontFamily="{StaticResource FontAwesomeSolid}"
@@ -78,7 +78,7 @@
         </ShellContent>
 
 
-        <ShellContent Title="Profile" ContentTemplate="{DataTemplate local:NewItemPage}">
+        <ShellContent Title="Profile" ContentTemplate="{DataTemplate local:ProfilePage}">
             <ShellContent.Icon>
                 <FontImageSource
                     FontFamily="{StaticResource FontAwesomeSolid}"

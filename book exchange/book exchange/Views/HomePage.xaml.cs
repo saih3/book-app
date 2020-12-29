@@ -57,5 +57,6 @@ namespace book_exchange.Views
         {
             await Shell.Current.GoToAsync(nameof(NewItemPage));
         }
+        
     }
 }

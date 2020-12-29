@@ -14,8 +14,6 @@ namespace book_exchange.ViewModels
         private string isbn;
         private string author;
 
-
-
         public NewItemViewModel()
         {
             SaveCommand = new Command(OnSave, ValidateSave);
@@ -77,5 +75,7 @@ namespace book_exchange.ViewModels
             // This will pop the current page off the navigation stack
             await Shell.Current.GoToAsync("..");
         }
+
+
     }
 }

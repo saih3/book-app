@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModel="clr-namespace:book_exchange.ViewModels"
+             xmlns:template="clr-namespace:book_exchange.Views.Templates"
+             x:Class="book_exchange.Views.ChatsPage"
+             xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:ffTransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
+             Title="{Binding Title}"
+             Shell.NavBarIsVisible="False">
+
+
+
+    <ContentPage.BindingContext>
+        <viewModel:ChatsViewModel />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="FillAndExpand">
+            <StackLayout Padding="0,20,10,20" Orientation="Horizontal" HorizontalOptions="Fill" BackgroundColor="{StaticResource Primary}">
+                        <SearchBar Placeholder="Search"
+                                   CancelButtonColor="{StaticResource Secondary}"
+                                   PlaceholderColor="LightGray"
+                                   TextColor="white"
+                                   TextTransform="Lowercase"
+                                   HorizontalTextAlignment="Start"
+                                   FontSize="Medium"
+                                   HorizontalOptions="FillAndExpand"
+                        />
+             </StackLayout>
+
+            <StackLayout VerticalOptions="FillAndExpand">
+                <ListView
+                            CachingStrategy="RecycleElement"
+                            HasUnevenRows="False"
+                            ItemTapped="ListView_ItemTapped"
+                            ItemsSource="{Binding ContactsList}"
+                            RowHeight="75"
+                            SelectionMode="None"
+                            SeparatorColor="Gray"
+                            SeparatorVisibility="None"
+                        VerticalOptions="FillAndExpand">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <template:ChatsViewTemplate/>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -10,7 +10,7 @@
     <!--x:Name="book_exchange.ViewModels.ItemsViewModel"-->
 
     <ContentPage.BindingContext>
-        <vm:HomePageModel />
+        <vm:HomePageViewModel />
     </ContentPage.BindingContext>
 
     <!--<ContentPage.Resources>
@@ -76,7 +76,7 @@
                 </StackLayout>
             </ScrollView>-->
 
-            <CollectionView Grid.Row="1" Margin="30" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+            <CollectionView Grid.Row="1" Margin="30,30,30,0"  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
                             SelectionMode="None" IsEnabled="True" IsVisible="True" EmptyView="No items to display" ItemsSource="{Binding MyEvents }" BackgroundColor="white">
                 <!--<CollectionView.Header>
                     <Label Text="My Events" TextColor="Black" FontSize="20" FontAttributes="Bold"/>
@@ -110,9 +110,9 @@
                                                 <Label Text="{Binding Location}" Opacity="0.5" TextColor="Black" FontSize="12" Margin="0,-5,0,0"/>
                                                 
                                                 <StackLayout Orientation="Horizontal">
-                                                    <Button BackgroundColor="Transparent" Text="&#xf064;" FontFamily="{StaticResource FontAwesomeSolid}"/>
-                                                    <Button BackgroundColor="Transparent" Text="&#xf02e;" FontFamily="{StaticResource FontAwesomeSolid}"/>
-                                                    <Button BackgroundColor="Transparent" Text="&#xf1d8;" FontFamily="{StaticResource FontAwesomeSolid}"/>
+                                                    <Button x:Name="SharePost" BackgroundColor="Transparent" Text="&#xf064;" FontFamily="{StaticResource FontAwesomeSolid}"/>
+                                                    <Button x:Name="SavePost" BackgroundColor="Transparent" Text="&#xf02e;" FontFamily="{StaticResource FontAwesomeSolid}"/>
+                                                    <Button x:Name="SendPost" BackgroundColor="Transparent" Text="&#xf1d8;" FontFamily="{StaticResource FontAwesomeSolid}"/>
                                                 </StackLayout>
                                             </StackLayout>
                                            
