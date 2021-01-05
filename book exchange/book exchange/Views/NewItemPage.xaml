@@ -38,6 +38,9 @@
                 <Label Text="Details" FontSize="Medium" />
                 <Editor Text="{Binding Description, Mode=TwoWay}" AutoSize="TextChanges" FontSize="Medium" Margin="0" />
 
+                <Label Text="Add Tag" FontSize="Medium" />
+                <Editor Text="{Binding Description, Mode=TwoWay}" AutoSize="TextChanges" FontSize="Medium" Margin="0" />
+
                 <StackLayout Orientation="Horizontal" Padding="10">
                     <Label Text="On Campus" FontSize="Medium" HorizontalOptions="Start"/>
                     <Switch OnColor="Orange"

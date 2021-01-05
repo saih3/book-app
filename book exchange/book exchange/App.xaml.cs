@@ -8,7 +8,7 @@ namespace book_exchange
 {
     public partial class App : Application
     {
-
+        public static string User = "Mia";
         public App()
         {
             InitializeComponent();

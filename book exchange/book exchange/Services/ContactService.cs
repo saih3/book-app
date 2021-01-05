@@ -23,7 +23,8 @@ namespace book_exchange.Services
                         LastChatDatetime = "Yesterday",
                         MessageIsFromMe = true,
                         MessageContent = "Wanna buy my book???"
-                    }
+                    },
+
                 },
                new Contact
                 {

@@ -6,6 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using Rg.Plugins.Popup.Services;
+using book_exchange.Views.PopupPages;
+
 
 namespace book_exchange.Views
 {
@@ -56,6 +59,11 @@ namespace book_exchange.Views
         private async void OnAddItem_Clicked(object sender, EventArgs e)
         {
             await Shell.Current.GoToAsync(nameof(NewItemPage));
+        }
+
+        private void ShowPopup(object o, EventArgs e)
+        {
+            PopupNavigation.Instance.PushAsync(new FilterPopupPage());  
         }
         
     }

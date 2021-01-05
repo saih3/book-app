@@ -22,9 +22,12 @@ namespace book_exchange.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+            FFImageLoading.Forms.Platform.CachedImageRenderer.Init(); LoadApplication(new App());
+            Rg.Plugins.Popup.Popup.Init();
+
             global::Xamarin.Forms.Forms.SetFlags("CollectionView_Experimental");
             global::Xamarin.Forms.Forms.Init();
-            FFImageLoading.Forms.Platform.CachedImageRenderer.Init(); LoadApplication(new App());
+
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);

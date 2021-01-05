@@ -29,7 +29,7 @@
                         />
              </StackLayout>
 
-            <StackLayout VerticalOptions="FillAndExpand">
+            <StackLayout VerticalOptions="FillAndExpand" Padding="5,0,0,0">
                 <ListView
                             CachingStrategy="RecycleElement"
                             HasUnevenRows="False"

@@ -16,5 +16,6 @@ namespace book_exchange.Models
         public string ProfileImage { get; set; }
         public bool ChatPinned { get; set; }
         public virtual LastChatMetaData ChatMetaData { get; set; }
+        //public string Text { get; set; }
     }
 }

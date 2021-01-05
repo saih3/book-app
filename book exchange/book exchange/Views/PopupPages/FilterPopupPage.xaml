@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModel="clr-namespace:book_exchange.ViewModels"
+             x:Class="book_exchange.Views.PopupPages.FilterPopupPage"
+             xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup">
+    <!--  You can use any elements here which are extended from Xamarin.Forms.View  -->
+
+    <pages:PopupPage.BindingContext>
+        <viewModel:FiltersViewModel />
+    </pages:PopupPage.BindingContext>
+    
+    <StackLayout Margin="12"
+                 Padding="30"
+                 BackgroundColor="White"
+                 HorizontalOptions="Start"
+                 VerticalOptions="Center"
+                 >
+        <ScrollView>
+
+
+            <StackLayout>
+                <!--Filter 1-->
+                <Expander>
+                    <Expander.Header>
+                        <Grid>
+                            <Label Text="Subject"
+                               FontAttributes="Bold"
+                               FontSize="Medium" />
+
+                            <Label Text="&#xf063;"
+                                   FontFamily="{StaticResource FontAwesomeSolid}" 
+                                   HorizontalOptions="End"
+                                   VerticalOptions="Start">
+                                <Label.Triggers>
+                                    <DataTrigger TargetType="Label"
+                                         Binding="{Binding Source={RelativeSource AncestorType={x:Type Expander}}, Path=IsExpanded}"
+                                         Value="True">
+                                        <Setter Property="Text"
+                                                Value="&#xf062;" />
+                                    </DataTrigger>
+                                </Label.Triggers>
+                            </Label>
+                        </Grid>
+                    </Expander.Header>
+
+                    <Expander.ContentTemplate>
+                        <DataTemplate>
+                            <Grid Padding="10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+                                <ListView
+                                    ItemsSource="{Binding SubjectsList}"
+                                    SeparatorVisibility="None">
+                                    <ListView.ItemTemplate>
+                                        <DataTemplate>
+                                            <ViewCell>
+                                                <Grid ColumnSpacing="0" >
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="auto" />
+                                                        <ColumnDefinition Width="auto" />
+                                                    </Grid.ColumnDefinitions>
+                                                    <CheckBox Grid.Column="0" 
+                                                              Margin="0" 
+                                                              HorizontalOptions="Start"
+                                                              VerticalOptions="Center"/>
+                                                    <Label Text="{Binding Name}" 
+                                                           Grid.Column="1" 
+                                                           Margin="0"
+                                                           HorizontalOptions="Start"
+                                                           VerticalOptions="Center"
+                                                           />
+                                                </Grid>
+                                            </ViewCell>
+                                        </DataTemplate>
+                                    </ListView.ItemTemplate>
+                                </ListView>
+                            </Grid>
+                        </DataTemplate>
+                    </Expander.ContentTemplate>
+                </Expander>
+
+                <!--Filter 2-->
+                <Expander>
+                    <Expander.Header>
+                        <Grid>
+                            <Label Text="Subject"
+                               FontAttributes="Bold" 
+                               FontSize="Medium" />
+
+                            <Label Text="&#xf063;"
+                                   FontFamily="{StaticResource FontAwesomeSolid}" 
+                                   HorizontalOptions="End"
+                                   VerticalOptions="Start">
+                                <Label.Triggers>
+                                    <DataTrigger TargetType="Label"
+                                         Binding="{Binding Source={RelativeSource AncestorType={x:Type Expander}}, Path=IsExpanded}"
+                                         Value="True">
+                                        <Setter Property="Text"
+                                                Value="&#xf062;" />
+                                    </DataTrigger>
+                                </Label.Triggers>
+                            </Label>
+                        </Grid>
+                    </Expander.Header>
+
+                    <Expander.ContentTemplate>
+                        <DataTemplate>
+                            <Grid Padding="10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+                                <ListView
+                                    ItemsSource="{Binding SubjectsList}">
+                                    <ListView.ItemTemplate>
+                                        <DataTemplate>
+                                            <ViewCell>
+                                                <Label Text="{Binding Name}"/>
+                                            </ViewCell>
+                                        </DataTemplate>
+                                    </ListView.ItemTemplate>
+                                </ListView>
+                            </Grid>
+                        </DataTemplate>
+                    </Expander.ContentTemplate>
+                </Expander>
+            </StackLayout>
+        </ScrollView>
+
+
+
+    </StackLayout>
+</pages:PopupPage>
