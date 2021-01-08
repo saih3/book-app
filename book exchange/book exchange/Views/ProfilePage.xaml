@@ -4,30 +4,55 @@
              x:Class="book_exchange.Views.ProfilePage">
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Profile"/>
         <ToolbarItem Text="Sign Out"/>
     </ContentPage.ToolbarItems>
     
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Username"
-                VerticalOptions="StartAndExpand" 
-                HorizontalOptions="StartAndExpand" />
-            <Label Text="Class"
-                VerticalOptions="StartAndExpand" 
-                HorizontalOptions="StartAndExpand" />
-            <Label Text="Major"
-                VerticalOptions="StartAndExpand" 
-                HorizontalOptions="StartAndExpand" />
-            <Label Text="Major" FontSize="Title" FontAttributes="Bold"
-                VerticalOptions="StartAndExpand" 
-                HorizontalOptions="StartAndExpand" />
-            <Label Text="Email"
-                VerticalOptions="StartAndExpand" 
-                HorizontalOptions="StartAndExpand" />
-            <Label Text="Phone"
-                VerticalOptions="StartAndExpand" 
-                HorizontalOptions="StartAndExpand" />
+            <Frame HasShadow="True" BackgroundColor="{StaticResource Secondary}" 
+                   VerticalOptions="StartAndExpand" 
+                   HorizontalOptions="FillAndExpand" 
+                   Padding="0" 
+                   CornerRadius="10"
+                   Margin="30"
+                   >
+                <StackLayout Margin="20">
+                    <Label Text="Username"
+                           FontSize="Small"
+                           TextColor="Gray"
+                        VerticalOptions="StartAndExpand" 
+                        HorizontalOptions="StartAndExpand" />
+                    <Label Text="Mia123" FontSize="Large" FontAttributes="Bold"/>
+
+                    <Label Text="Email"
+                           FontSize="Small"
+                           TextColor="Gray"
+                        VerticalOptions="StartAndExpand" 
+                        HorizontalOptions="StartAndExpand" />
+                    <Label Text="mia@union.edu" FontSize="Large" FontAttributes="Bold"/>
+
+                    <Label Text="Class of 2022"
+                           FontSize="Small"
+                           TextColor="Black"
+                        VerticalOptions="StartAndExpand" 
+                        HorizontalOptions="StartAndExpand" 
+                           FontAttributes="Italic"/>
+
+                    <Label Text="Computer Science"
+                           FontSize="Small"
+                           TextColor="Black"
+                        VerticalOptions="StartAndExpand" 
+                        HorizontalOptions="StartAndExpand" 
+                           FontAttributes="Italic"
+                           Padding="0,0,0,10"/>
+
+                    <Button Text="Edit" CornerRadius="10"/>
+
+                </StackLayout>
+            </Frame>
         </StackLayout>
+                 
+           
+           
     </ContentPage.Content>
 </ContentPage>

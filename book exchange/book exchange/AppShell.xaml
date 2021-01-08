@@ -66,7 +66,7 @@
             </ShellContent.Icon>
         </ShellContent>
 
-        <ShellContent Title="Saved" ContentTemplate="{DataTemplate local:NewItemPage}">
+        <ShellContent Title="Saved" ContentTemplate="{DataTemplate local:MessagePage}">
             <ShellContent.Icon>
                 <FontImageSource
                     FontFamily="{StaticResource FontAwesomeSolid}"
